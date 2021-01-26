@@ -1,0 +1,68 @@
+ /* #tweet-text {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  font-style: bold;
+}  */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.pretext {
+   text-align: left;
+} 
+label {
+  
+  font-size: 1em;
+  /* font-weight: bold; */
+  color: black;
+}
+
+textarea {
+	width: 100%;
+  height: 35px;
+  background: transparent;
+  color: black; 
+	/* border: 3px solid #cccccc; */
+  /* padding: 5px; */
+  margin: 5px;
+  font-size: 1em;
+  font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+  align-self: flex-start;
+}
+
+.sub-new-tweet {
+  display: flex;
+  justify-content: space-between;
+  font-family: "bungee", sans-serif;
+  border-top-color: black;
+  border-top-style: solid;
+}
+
+button {
+  border-radius: 6px;
+  background-color: crimson;
+  color: whitesmoke;
+  box-shadow: rgba(0,0,0,.4) 6px 6px 6px;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+button:active {
+  position: relative;
+  left: 5px;
+  top:5px;
+  box-shadow: none;
+}
+
+output {
+  left: 2px;
+  background-color: coral;
+  color: black;
+  box-shadow: rgba(0,0,0,.4) 4px 4px 4px;
+  border-radius: 10px;
+  align-self: flex-end;
+  margin-top: 5px;
+}
+

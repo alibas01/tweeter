@@ -6,7 +6,8 @@ The background-image should be a transparent pattern. Feel free to use this tool
 
 header h2 {
   /* align-items: flex-end; */
-  background-color: #00c244;
+  background-color: pink;
+  opacity: 75%;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 
 }
