@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -53,6 +54,36 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      <section class="tweet-container">
+        <article>
+          <header>
+            <table>
+            <td>  
+            <img class="man-image" src="/images/man.jpg"> 
+            </td>
+            <td>
+            <h4>Justin Trudeau</h4>
+            </td>
+            <td>
+            <h5 class="username">@democratJustin</h5>
+            </td>
+            </table>
+          </header>
+          <body><div class='tweet-body'>
+            This tweet is a small step for today, but it will change the universe until the end of the universe.
+          </body></div>
+          <footer>
+            <div class="timestamp">
+            <label>10 days ago</label>
+            </div>
+            <div class="like-buttons">
+            <button type="submit" method='POST' action="/tweets/" >💖</button>
+            <button type="submit" method='POST' action="/tweets/" >🔃</button>
+            <button type="submit" method='POST' action="/tweets/" >📝</button>
+          </div>
+          </footer>
+        </article>
+      </section>
       </section>
     </main>
   </body>

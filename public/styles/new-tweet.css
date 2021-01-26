@@ -45,13 +45,13 @@ textarea {
   border-top-style: solid;
 }
 
-button {
+form button {
   border-radius: 6px;
   background-color: crimson;
   color: whitesmoke;
   box-shadow: rgba(0,0,0,.4) 6px 6px 6px;
   align-self: flex-start;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 button:active {
   position: relative;
