@@ -4,10 +4,10 @@ The name should be centered below the avatar
 The background should be a different colour than the nav and the body
 The background-image should be a transparent pattern. Feel free to use this tool to assist: https://www.transparenttextures.com/ */
 
-h2 {
+header h2 {
   /* align-items: flex-end; */
-  background-color: #731700;
-  background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
+  background-color: #00c244;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 
 }
 
