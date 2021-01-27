@@ -8,37 +8,44 @@
 
 }
 .tweet-container header {
-  height: 50px;
-  flex-direction: row;
+  height: 60px;
   background-color: rgb(213, 213, 213);
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 h5  {
-  opacity: 70%;
-  text-align: left;
+  opacity: 10%;
+  text-align: right;
+  flex-grow: 2;
+  align-content: flex-end;
+  margin-right: 10px;
 }
-.tweet-container img {
+.man-image {
   width: 50px;
   height: auto;
+  margin-left: 10px;
   align-self: flex-start;
 }
-.tweet-container body {
+.tweet-body {
   
-  text-align: left;
-  display: block;
-  ;
-  
-}
-div .tweet-body {
-  padding: 15px;
+  padding: 12px;
   height: 120px;
-  
+  text-align: justify;
+  vertical-align: text-bottom;
+  font-size: 78%;
+  bottom: 8px;
+  left: 16px;
 }
+
 .tweet-container footer {
   border-top-color: rgb(72, 72, 72);
   border-top-width: 3px;
   border-top-style: solid;
-  height: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 35px;
   display: flex;
   justify-content: space-between;
   font-size: small;
@@ -59,4 +66,13 @@ div .tweet-body {
   margin-top: auto;
   margin-bottom: 7px;
   margin-left: 7px;
+  opacity: 70%;
+}
+
+article:hover .username {
+  opacity: 70%;
+}
+
+article:hover {
+  box-shadow: rgba(0,0,0,.4) 10px 10px 10px
 }
