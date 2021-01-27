@@ -5,10 +5,12 @@
   border-style: solid;
   margin-top: 50px;
   margin-bottom: 50px;
+  width: fit-content;
 
 }
 .tweet-container header {
   height: 60px;
+  width: 100%;
   background-color: rgb(213, 213, 213);
   display: inline-flex;
   flex-direction: row;
@@ -29,12 +31,12 @@ h5  {
   align-self: flex-start;
 }
 .tweet-body {
-  
+  width: 100%;
   padding: 12px;
   height: 120px;
   text-align: justify;
   vertical-align: text-bottom;
-  font-size: 78%;
+  font-size: 90%;
   bottom: 8px;
   left: 16px;
 }
@@ -55,12 +57,12 @@ h5  {
   border-radius: 5px;
   background-color:rgb(213, 213, 213);
   border-width: 4px;
-  box-shadow: rgba(0,0,0,.4) 6px 6px 6px;
+  /* box-shadow: rgba(0,0,0,.4) 6px 6px 6px; */
   align-self: flex-end;
   margin-top: auto;
   margin-bottom: 7px;
   margin-right: 7px;
-  
+  opacity: 50%  
 }
 .timestamp {
   margin-top: auto;
@@ -75,4 +77,9 @@ article:hover .username {
 
 article:hover {
   box-shadow: rgba(0,0,0,.4) 10px 10px 10px
+}
+
+article:hover .like-buttons {
+  box-shadow: rgba(0,0,0,.4) 6px 6px 6px;
+  opacity: 100%;
 }
