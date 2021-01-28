@@ -6,7 +6,8 @@ The <span> within the <nav> has Bungee as it's default font-family
 The inner content should not be touching the viewport edge on any side and should remain 1.5ems away from all edges */
 
 nav {
-  
+  display: flex;
+  justify-content: space-between;
   height: 120px;
   width: 100%;
   background-color: #4056a1;
@@ -14,9 +15,26 @@ nav {
   position:sticky;
   top:0px;
   z-index: 1;
+  /* if it is greater than 1200 keep pixel */
 }
 
 span {
   font-family: 'bungee', sans-serif;
   color: #ffffff;
+  align-self: flex-start;
+}
+
+#compose {
+  border-radius: 5px;
+  background-color: transparent;
+  border-width: 2px;
+  opacity: 60%;
+  font-weight: 700;
+}
+#compose:hover {
+  border-radius: 10px;
+  background-color: transparent;
+  border-width: 3px;
+  opacity: 100%;
+  font-weight: 700;
 }

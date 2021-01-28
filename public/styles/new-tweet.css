@@ -1,9 +1,6 @@
- /* #tweet-text {
-  justify-content: space-between;
-  flex-direction: row;
-  display: flex;
-  font-style: bold;
-}  */
+ #tweet-form {
+  display: none;
+} 
 .container {
   display: flex;
   justify-content: center;
