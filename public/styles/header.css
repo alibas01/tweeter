@@ -5,17 +5,15 @@ The background should be a different colour than the nav and the body
 The background-image should be a transparent pattern. Feel free to use this tool to assist: https://www.transparenttextures.com/ */
 
 header h2 {
-  /* align-items: flex-end; */
   background-color: pink;
   opacity: 75%;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-  text-align: center;
   z-index: 0;
-
+  font-size: 1.25em;
 }
 
 header {
-  height: 400px;
+  height: 40vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -23,10 +21,20 @@ header {
   flex-direction: column;
   background-color: turquoise;
   top: relative;
-
 }
 
-div {
-  /* justify-content: center;
-  align-items: center;  */
+header img {
+  width: 6.5em;
+  height: auto; 
+}
+
+@media all and (min-width: 800px) {
+  header.profile {
+    margin-top: 6.5em;
+    height: 350px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 350px;
+  }
+  
 }

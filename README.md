@@ -22,8 +22,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["Screenshot of greater than 600px design"](https://github.com/alibas01/tweeter/blob/master/docs/Create_new.png)
+!["Screenshot of greater than 800px design"](https://github.com/alibas01/tweeter/blob/master/docs/Create_new.png)
+!["Screenshot of smaller than 800px design"](https://github.com/alibas01/twetter/blob/master/docs/editpage.png)
 !["Screenshot of between 200px and 600px design"](https://github.com/alibas01/tweeter/blob/master/docs/MyURLs_loggedin.png)
-!["Screenshot of smaller than 200px design"](https://github.com/alibas01/twetter/blob/master/docs/editpage.png)
 
   

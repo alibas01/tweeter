@@ -31,20 +31,23 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+      <p class="warnings"></p>
       <div id='compose'>
-        <button id='compose' type='button'> Write a new tweet </button>
+        <button id='compose' type='button'> Compose <br>new tweet </button>
       </div>
     </nav>
-    <header>
+    <section class="horizantal">   
+    <header class="profile">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
+      
       <br>
       <div>
           <h2>Amber Heard</h2>
       </div>
   </header>
-
+  
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
@@ -57,9 +60,8 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
-        <p class="warnings"></p>
+        
       <section class="tweet-container">
-        <p>
         <article>
           <header>
             <img class="man-image" src="/images/man.jpg"> 
@@ -67,7 +69,7 @@
             <h5 class="username">@perfectlady</h5>
           </header>
           <body><div class='tweet-body'>
-            Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.
+            Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.
              Rumi
           </div></body>
           <footer>
@@ -81,9 +83,9 @@
           </div>
           </footer>
         </article>
-      </p>
       </section>
       </section>
     </main>
+  </section>
   </body>
 </html>

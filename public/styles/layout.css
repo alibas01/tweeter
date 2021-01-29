@@ -35,5 +35,13 @@ main {
   /* text-align: center; */
   vertical-align: middle;
   margin: auto;
+}
 
+@media all and (min-width: 800px) {
+  .horizantal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
 }

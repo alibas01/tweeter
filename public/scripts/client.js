@@ -10,9 +10,9 @@ const escape =  function(str) {
 };
 
 const createTweetElement = function(tweetObj) {
-
+  let time = timestampConverter(tweetObj.created_at)
   const htmlUnit = `
-  <p>
+  
   <article>
     <header>
             <img class="man-image" src="/images/man.jpg"> 
@@ -24,7 +24,7 @@ const createTweetElement = function(tweetObj) {
     </div></body>
     <footer>
       <div class="timestamp">
-        <label>${tweetObj.created_at}</label>
+        <label>${time.day} days ${time.hours} hours ${time.minutes} minutes ago.</label>
       </div>
       <div class="like-buttons">
         <button type="submit" method='POST' action="/tweets/" >💖</button>
@@ -33,7 +33,7 @@ const createTweetElement = function(tweetObj) {
       </div>
     </footer>
   </article> 
-  </p>
+  
   `;
   return htmlUnit;
 };
@@ -66,19 +66,17 @@ const errorMessage = function(error) {
   if (error === "empty") {
     message = "Did you say something? I didn't hear!";
   } else {
-    message = "Please use maximum 140 characters!! Maan, you have a lot to say.";
+    message = "Please use maximum 140 characters! Man, you have a lot to say.";
   }
   const injection = `
-                    <span><div class='error-message'>
+                    <div class='error-message'>
                     ${message}
-                    </div></span>
+                    </div>
   `;
   return injection;
 };
 
 const uploadTweets = function(formData) {
-  
-  console.log('data',formData);
   $.ajax({
     method: "POST",
     url: 'http://localhost:8080/tweets',
@@ -91,6 +89,19 @@ const uploadTweets = function(formData) {
     .fail(() => console.log('failed to post'))
     .always(() => loadTweets());
 };
+
+const timestampConverter = function(tweetTime) {
+  const now = new Date().getTime();
+  const diff = now - tweetTime;
+  const seconds = Math.floor(diff / 1000);
+  let minutes = Math.round(seconds / 60);
+  let hours = Math.round(minutes / 60);
+  minutes = minutes % 60;
+  hours = hours % 24;
+  let day = Math.round(hours / 24);
+  
+  return {day:day, hours:hours, minutes:minutes};
+}
 
 
 $(document).ready(function() {
