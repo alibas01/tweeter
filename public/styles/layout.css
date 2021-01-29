@@ -21,18 +21,10 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
- /* Main class in the body :
-It should be only 90% of the width of its parent element
-It should be center aligned to the body
-It should have the same colour background as the <body> element*/
 
 main {
   width: 90%;
   background-color: #f4f1ec;
-  /* text-align: center; */
   vertical-align: middle;
   margin: auto;
 }

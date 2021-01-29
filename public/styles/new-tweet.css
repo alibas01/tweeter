@@ -13,11 +13,11 @@
 .pretext {
    text-align: left;
    display: block;
-} 
+}
+
 label {
   
   font-size: 1em;
-  /* font-weight: bold; */
   color: black;
 }
 
@@ -26,9 +26,7 @@ textarea {
   height: 35px;
   background: transparent;
   color: black; 
-	/* border: 3px solid #cccccc; */
-  /* padding: 5px; */
-  margin: 5px;
+	margin: 5px;
   font-size: 1em;
   font-weight: bold;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -51,6 +49,7 @@ form button {
   align-self: flex-start;
   margin-top: 12px;
 }
+
 button:active {
   position: relative;
   left: 5px;
@@ -67,17 +66,5 @@ output {
   align-self: flex-end;
   margin-top: 5px;
 }
-.error-message {
-  border-width: 2px;
-  border-color: red;
-  border-style: solid;
-  color: red;
-  /* margin-top: 5px;
-  margin-bottom: 5px; */
-}
-.warnings {
-  /* height: 10px;
-  margin-top: 5px;
-  margin-bottom: 1.5em; */
-}
+
 

@@ -1,13 +1,8 @@
 .tweet-container {
   display: flex;
   flex-direction: column-reverse;
-  /* width: fit-content; */
   margin-top: 5 px;
 }
-/* .tweet-container p {
-  margin-top: 5px;
-  margin-bottom: 5px;
-} */
 
 article {
   border-width: 2px;
@@ -17,7 +12,7 @@ article {
   word-wrap: break-word;
   margin-top: 5px;
   margin-bottom: 5px;
-  }
+}
 
 .tweet-container header {
   height: 43px;
@@ -36,12 +31,14 @@ h5  {
   margin-right: 10px;
   font-size: medium;
 }
+
 .man-image {
   width: 40px;
   height: auto;
   margin-left: 10px;
   align-self: flex-start;
 }
+
 .tweet-body {
   width: 100%;
   padding: 10px;
@@ -67,12 +64,14 @@ h5  {
   font-size: small;
   font-weight: 600;
 }
+
 .like-buttons {
   border-radius: 5px;
   align-self: center;
   margin-right: 7px;
   opacity: 50%  
 }
+
 .timestamp {
   margin-top: auto;
   margin-bottom: 7px;
@@ -98,6 +97,5 @@ article:hover .like-buttons {
     height: auto;
     width: 65%; 
     margin-right: 50px;
-    
   }
 }
