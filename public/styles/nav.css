@@ -48,13 +48,3 @@ span {
     background-color: turquoise;
   }
 }
-
-@media all and (min-width: 800px) {
-  nav {
-    background-color: #4056a1;
-    padding: 1.5em;
-    position: relative;
-    top:0px;
-    z-index: 1;
-  }
-}
