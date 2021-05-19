@@ -43,6 +43,7 @@ const createTweetElement = function(tweetObj) {
 
 // takes the tweet object and renders it by looping with createTweetElement function
 const renderTweets = function(tweetObj) {
+  $('.tweet-container').empty();
   // Create a loop to render the HTML elements
   for (let tweet of tweetObj) {
     const newHtmlUnit = createTweetElement(tweet);
